@@ -7,5 +7,4 @@ int main(){
 
     printf("Message 1: %s\n", message1.c_str());
     printf("Message 2: %s\n", message2.c_str());
-
 }
