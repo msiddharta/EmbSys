@@ -1,0 +1,2 @@
+/usr/bin/ar qc libconvert_to_roman.a CMakeFiles/convert_to_roman.dir/src/numerals.cpp.o
+/usr/bin/ranlib libconvert_to_roman.a
