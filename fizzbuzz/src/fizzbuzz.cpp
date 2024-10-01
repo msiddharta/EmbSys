@@ -1,4 +1,7 @@
 #include <fizzbuzz.h>
+#include <string>
+
+using namespace std;
 
 string fizzbuzz(int number){
 
