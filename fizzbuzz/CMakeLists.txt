@@ -3,11 +3,11 @@ add_library(fizzbuzz src/fizzbuzz.cpp)
 target_include_directories(fizzbuzz PUBLIC include)
 
 # executable using the library
-#add_executable(fizzbuzz
-#src/fizzbuzz.cpp
-#)
+add_executable(fizzbuzz_main
+src/fizzbuzz_main.cpp
+)
 
-#target_link_libraries(fizzbuzz fizzbuzz)
+target_link_libraries(fizzbuzz_main fizzbuzz)
 
 # test executable testing the library
 add_executable(fizzbuzz_test
