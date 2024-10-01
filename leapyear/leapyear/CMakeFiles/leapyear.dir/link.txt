@@ -1,2 +1,0 @@
-/usr/bin/ar qc libleapyear.a CMakeFiles/leapyear.dir/src/leapyear.cpp.o
-/usr/bin/ranlib libleapyear.a

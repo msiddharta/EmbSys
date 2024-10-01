@@ -1,5 +1,0 @@
-if(EXISTS "/home/paul/FH/embsys/embsw24/EmbSys/leapyear/Greeting/greet_test-b12d07c_tests.cmake")
-  include("/home/paul/FH/embsys/embsw24/EmbSys/leapyear/Greeting/greet_test-b12d07c_tests.cmake")
-else()
-  add_test(greet_test_NOT_BUILT-b12d07c greet_test_NOT_BUILT-b12d07c)
-endif()
