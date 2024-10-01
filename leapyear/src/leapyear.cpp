@@ -2,15 +2,15 @@
 
 bool isLeapYear(int year)
 {
-    if(year < 0) return false;
+    if(year <= 0) return false;
 
-    if(year == 0) return false;
+    bool divby4 = (year % 4 == 0);
 
-    if (year % 400 == 0) return true;
+    bool divby400 (year % 400 == 0);
 
-    if(year % 100 == 0) return false;
+    bool divby100 (year % 100 == 0);
 
-    if(year % 4 == 0) return true; //short version
+    bool leapyear = (divby4 && !divby100) || divby400;
 
-    return false;
+    return leapyear;
 }
