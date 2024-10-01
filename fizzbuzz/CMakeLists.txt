@@ -3,8 +3,8 @@ add_library(fizzbuzz src/fizzbuzz.cpp)
 target_include_directories(fizzbuzz PUBLIC include)
 
 # executable using the library
-#add_executable(leapyear
-#src/leapyear.cpp
+#add_executable(fizzbuzz
+#src/fizzbuzz.cpp
 #)
 
 #target_link_libraries(numeral_main convert_to_roman)
