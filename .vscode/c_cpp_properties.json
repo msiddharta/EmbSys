@@ -14,4 +14,22 @@
         }
     ],
     "version": 4
+}{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/usr/local/include/catch2"
+            ],
+            "defines": [],
+            "cStandard": "c17",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "linux-gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "forcedInclude": [],
+            "compilerArgs": []
+        }
+    ],
+    "version": 4
 }
