@@ -7,7 +7,7 @@ target_include_directories(fizzbuzz PUBLIC include)
 #src/fizzbuzz.cpp
 #)
 
-#target_link_libraries(numeral_main convert_to_roman)
+#target_link_libraries(fizzbuzz fizzbuzz)
 
 # test executable testing the library
 add_executable(fizzbuzz_test
@@ -17,6 +17,6 @@ test/fizzbuzz_test.cpp
 
 target_include_directories(fizzbuzz_test PUBLIC include)
 
-target_link_libraries(fizzbuzz_test PRIVATE leapyear)
+target_link_libraries(fizzbuzz_test PRIVATE fizzbuzz)
 
 catch_discover_tests(fizzbuzz_test)
