@@ -20,3 +20,18 @@ int fibonacci_tail(int index)
 {
     return fibonacci_tail(index, 1, 0);
 }
+
+int fibonacci_loop(int index)
+{
+    int next = 1;
+    int current = 0;
+    while(index > 0)
+    {
+        int tmp = current;
+        current = next;
+        next = next + tmp;
+        index--;
+    }
+
+    return current;
+}
