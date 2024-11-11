@@ -1,0 +1,49 @@
+@startuml
+
+class Bank {
+    - name : String
+    - accounts : List<Account>
+    
+    + createAccount(owner: Person, initialBalance: double) : Account
+    + listAccounts() : void
+    + transferFunds(source: Account, target: Account, amount: double) : boolean
+    + provideOverdraft(account: Account, limit: double) : void
+}
+
+class Account {
+    - accountNumber : String
+    - balance : double
+    - owner : Person
+    - overdraftLimit : double
+    
+    + deposit(amount: double) : void
+    + withdraw(amount: double) : boolean
+    + getBalance() : double
+}
+
+class Person {
+    - name : String
+    - accounts : List<Account>
+    
+    + addAccount(account: Account) : void
+    + getAccounts() : List<Account>
+}
+
+class Transaction {
+    - transactionID : String
+    - sourceAccount : Account
+    - targetAccount : Account
+    - amount : double
+    - timestamp : Date
+    
+    + execute() : boolean
+    + getDetails() : String
+}
+
+Bank "1" --> "*" Account : manages
+Account "1" --> "1" Person : owned by
+Person "1" --> "*" Account : owns
+Transaction "1" --> "1" Account : source
+Transaction "1" --> "1" Account : target
+
+@enduml
