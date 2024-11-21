@@ -22,3 +22,16 @@ TEST_CASE("a new ringbuffer is empty")
         }
     }
 }
+
+// adding one item succeeds if the buffer is not full
+
+// adding one item fails if the buffer is full
+
+// an item can be removed from non-empty buffer
+
+// removing an item from empty buffer fails
+
+// the order of items is preserved
+
+// when inserting and removing items continuously the order of items is preserved
+// (check that wrap around works)
